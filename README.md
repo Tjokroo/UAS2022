@@ -1,5 +1,5 @@
 # UAS2022
-## MATA KULIAH B-PEMOGRAMAN
+## MATA KULIAH B.PEMOGRAMAN
 ## NAMA     : TJOKRO WINATA
 ## NIM      : 312110276
 ## KELAS    : TI.21.A.2
@@ -20,6 +20,7 @@
 ### Beberapa penjelasan mengenai program
 
 - program daftar_nilai.py
+
 ```python
 from view.input_nilai import *
 
@@ -61,6 +62,7 @@ def hapus_data():
         print("Data Mahasiswa Tidak Ada".format(nama))
 ```
 - program view_nilai.py
+
 ```python
 from model.daftar_nilai import *
 
@@ -96,4 +98,87 @@ def cetak_hasil_pencarian():
         print("==============================================================")
     else:
         print("Datanya {0} Tidak Ada ".format(nama))
+```
+
+- Program input_nilai.py
+
+```python
+def input_nama():
+    global nama
+    nama = input("Masukkan Nama        : ")
+    return nama
+
+
+def input_nim():
+    global nim
+    nim = input("Masukkan NIM         : ")
+    return nim
+
+
+def input_nilaiTugas():
+    global nilaiTugas
+    nilaiTugas = int(input("Masukkan Nilai Tugas : "))
+    return nilaiTugas
+
+
+def input_nilaiUts():
+    global nilaiUts
+    nilaiUts = int(input("Masukkan Nilai UTS   : "))
+    return nilaiUts
+
+
+def input_nilaiUas():
+    global nilaiUas
+    nilaiUas = int(input("Masukkan Nilai UAS   : "))
+    return nilaiUas
+```
+
+- Dan yang terakhir ini untuk program main.py
+
+```python
+from view.view_nilai import *
+
+
+def menu():
+    print('=====================================')
+    print('Input Data Nilai Mahasiswa'.center(40))
+    print('=====================================')
+    print('|    1. Tambah Data                 |')
+    print('|    2. Cari Data                   |')
+    print('|    3. Tampilkan Data              |')
+    print('|    4. Ubah Data                   |')
+    print('|    5. Hapus Data                  |')
+    print('|    6. Selesai                     |')
+    print('=====================================')
+
+
+while True:
+    menu()
+    choose = input('Pilih Menu  : ')
+
+    if choose == '1':
+        tambah_data()
+        input('Untuk kembali, tekan enter')
+
+    elif choose == '2':
+        cetak_hasil_pencarian()
+        input('Untuk kembali, tekan enter')
+
+    elif choose == '3':
+        cetak_daftar_nilai()
+        input('Untuk kembali, tekan enter')
+
+    elif choose == '4':
+        ubah_data()
+        input('Untuk kembali, tekan enter')
+
+    elif choose == '5':
+        hapus_data()
+        input('Untuk kembali, tekan enter')
+
+    elif choose == '6':
+        exit()
+
+    else:
+        print("Menu yang dicari tidak ditemukan, Silahkan pilih menu yang tersedia")
 ```
