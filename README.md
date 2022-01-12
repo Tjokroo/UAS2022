@@ -187,24 +187,30 @@ while True:
 
 ### Keterangan
 - Berikut adalah tampilan setelah di run
+
 ![gambar3](ss/ss2.png)
 
 - untuk memulai program dapat dengan menekan angka sesuai perintah, sebagi contoh kita tekan 1 untuk menambah data
 - Dan isi lah keterangan sesuai perintah
+
 ![gambar4](ss/ss4.png)
 
 - Dan tekan angka 2 apabila ingin mencari serta melihat data
+
 ![gambar5](ss/ss3.png)
 
 - Apabila ingin mengubah tekan 4 , dan isi sesuai keriteria data tersebut
 - Sebagai contoh saya disini menambahkan ADIT
+
 ![gambar6](ss/ss5.png)
 
 - Tekan angka 5 jika ingin menghapus data
 - Disini saya menghapus data ADIT
+
 ![gambar7](ss/ss6.png)
 
 - Dan apabila sudah selesai , anda bisa menekan angka 6 maka data selesai dibuat
+
 ![gambar8](ss/ss7.png)
 
 ### Mungkin sekian yang dapat saya jelaskan
